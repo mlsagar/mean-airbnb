@@ -1,0 +1,13 @@
+<div *ngIf="airbnb">
+    <h4>Name: {{airbnb.name}}</h4>
+    <h4>Rules: {{airbnb.house_rules}}</h4>
+    <h4>Property Type: {{airbnb.property_type}}</h4>
+    <h4>Price: {{airbnb.price | currency}}</h4>
+    <h4>Cleaning Fee: {{airbnb.cleaning_fee | currency}}</h4>
+    <h4>Address:
+        <br>
+        name: {{airbnb.address.name}} <br>
+        country: {{airbnb.address.country}}
+    </h4>
+    <button type="button" (click)="deleteAirbnb()">Delete</button>
+</div>

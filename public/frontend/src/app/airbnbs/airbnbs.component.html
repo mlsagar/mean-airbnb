@@ -1,0 +1,7 @@
+<ul>
+    <li *ngFor="let airbnb of airbnbs">
+        <a routerLink="/airbnb/{{airbnb._id}}">
+            {{airbnb.name}} - {{airbnb.price}} - {{airbnb.address.country}}
+        </a>
+    </li>
+</ul>

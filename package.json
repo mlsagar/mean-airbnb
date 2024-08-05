@@ -1,0 +1,20 @@
+{
+  "name": "mean-airbnb",
+  "version": "1.0.0",
+  "description": "Practice building mean application\r # Using the provided database write a database-driven MEAN Stack application that performs the following tasks\r - Displays a list of Airbnb places. List the place by Name - Price - Country (in any order). (5 points: 2 backend + 2 frontend + 1 hardening)\r - By clicking on one of the Airbnb places from step 1 you get the details of that place. The details of a place are (Name, house rules, property type, price, cleaning fee, and address). (5 points: 2 backend + 2 frontend + 1 hardening)\r - On the page that displays the list of Airbnb places have the ability to delete a place. (5 points:: 2 backend + 2 frontend + 1 hardening)",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "startFrontend": "cd public/frontend && npm start",
+    "startBackend": "nodemon --inspect",
+    "start": "startBackend | startFrontend"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.5.2"
+  }
+}
